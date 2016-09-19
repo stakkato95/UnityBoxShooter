@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\TargetMover.cs" />
      <Compile Include="Assets\Scripts\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Scripts\_Custom\BasicMover.cs" />
+     <Compile Include="Assets\Scripts\_Custom\BasicThresStateMover.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
