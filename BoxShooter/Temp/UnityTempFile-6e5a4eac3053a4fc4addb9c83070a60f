@@ -86,7 +86,6 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
-'Assets/BasicMover.cs'
 'Assets/Scripts/Controller.cs'
 'Assets/Scripts/GameManager.cs'
 'Assets/Scripts/MouseLooker.cs'
@@ -99,5 +98,6 @@
 'Assets/Scripts/TargetExit.cs'
 'Assets/Scripts/TargetMover.cs'
 'Assets/Scripts/TimedObjectDestructor.cs'
+'Assets/Scripts/_Custom/BasicMover.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
