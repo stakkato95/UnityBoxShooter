@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/_Custom/BasicMover.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/_Custom/BasicController.cs">
     <Files>
-      <File FileName="Assets/Scripts/_Custom/BasicMover.cs" Line="10" Column="52" />
+      <File FileName="Assets/Scripts/_Custom/BasicController.cs" Line="17" Column="30" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="29" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

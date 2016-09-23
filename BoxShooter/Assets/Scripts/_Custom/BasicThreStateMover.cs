@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class BasicThresStateMover : MonoBehaviour
+public class BasicThreStateMover : MonoBehaviour
 {
 
 	public enum Motion
