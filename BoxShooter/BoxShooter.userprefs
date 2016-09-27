@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/_Custom/BasicController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MouseLooker.cs">
     <Files>
-      <File FileName="Assets/Scripts/_Custom/BasicController.cs" Line="17" Column="30" />
-      <File FileName="Assets/Scripts/Controller.cs" Line="29" Column="15" />
+      <File FileName="Assets/Scripts/MouseLooker.cs" Line="16" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
