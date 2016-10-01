@@ -6,7 +6,7 @@ public class TargetBehavior : MonoBehaviour
 
 	// target impact on game
 	public int scoreAmount = 0;
-	public float timeAmount = 0.0f;
+	public float bonusTime = 0.0f;
 
 	// explosion when hit?
 	public GameObject explosionPrefab;
@@ -29,7 +29,7 @@ public class TargetBehavior : MonoBehaviour
 
 			// if game manager exists, make adjustments based on target properties
 			if (GameManager.gm) {
-				GameManager.gm.targetHit (scoreAmount, timeAmount);
+				GameManager.gm.targetHit (scoreAmount, bonusTime);
 			}
 				
 			// destroy the projectile
