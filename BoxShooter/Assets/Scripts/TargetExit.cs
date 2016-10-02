@@ -21,7 +21,7 @@ public class TargetExit : MonoBehaviour
 	{
 		// continually check to see if past the target time
 		if (Time.time >= targetTime) {
-			if (this.GetComponent<Animator> () == null)
+			if (!this.GetComponent<Animator> ())
 				// no Animator so just destroy right away
 				Destroy (gameObject);
 			else if (!startDestroy) {
