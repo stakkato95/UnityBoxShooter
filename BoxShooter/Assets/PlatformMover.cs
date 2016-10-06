@@ -18,7 +18,7 @@ public class PlatformMover : MonoBehaviour
 
 	const int ResetedTimer = -1;
 
-	public int secondsOfStay = 2;
+	public float secondsOfStay = 2;
 	public int platformSpeedMetersPerSecond = 1;
 	public Axis axisOfMoving = Axis.Z;
 	public int coordinateA = 35;
@@ -43,7 +43,6 @@ public class PlatformMover : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		CurrentState = State.MovingForth;
 		stayFinishTime = ResetedTimer;
 
 		MovementVector = axisToDirections [axisOfMoving];
@@ -51,6 +50,8 @@ public class PlatformMover : MonoBehaviour
 
 		smallerCoordinate = Mathf.Min (coordinateA, coordinateB);
 		biggerCoordinate = Mathf.Max (coordinateA, coordinateB);
+
+		CurrentState = State.MovingBack;
 	}
 	
 	// Update is called once per frame
@@ -102,7 +103,9 @@ public class PlatformMover : MonoBehaviour
 
 	bool IsOutOfMovementArea()
 	{
-		return (coordinateA <= GetTargetAxisCurrentPosition () + GetTargetAxisCurrentSize () && CurrentState == State.MovingForth) ||
-		(GetTargetAxisCurrentPosition () - GetTargetAxisCurrentSize () <= coordinateB && CurrentState == State.MovingBack);
+		var c1 = GetTargetAxisCurrentPosition () + GetTargetAxisCurrentSize () <= smallerCoordinate && CurrentState == State.MovingBack;
+		var c2 = biggerCoordinate <= GetTargetAxisCurrentPosition () - GetTargetAxisCurrentSize () && CurrentState == State.MovingForth;
+
+		return (c1 || c2);
 	}
 }
