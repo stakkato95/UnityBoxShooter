@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\_Custom\BasicController.cs" />
      <Compile Include="Assets\Scripts\_Custom\BasicMover.cs" />
      <Compile Include="Assets\Scripts\_Custom\BasicThreStateMover.cs" />
+     <Compile Include="Assets\Scripts\_VR\VRRenderScale.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
