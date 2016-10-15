@@ -16,12 +16,6 @@ public class BasicController : MonoBehaviour {
 	}
 
 	void Update () {
-		foreach (var item in Enum.GetValues(typeof(KeyCode)) as KeyCode[]) {
-			if (Input.GetKey (item)) {
-				Debug.Log (item);
-			}
-		}
-
 		var vert = Input.GetAxis ("Vertical");
 		Debug.Log (vert);
 		var movementZ = vert * Vector3.forward * movementSpeed * Time.deltaTime;

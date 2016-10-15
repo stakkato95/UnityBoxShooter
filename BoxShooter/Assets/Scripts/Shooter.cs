@@ -13,10 +13,7 @@ public class Shooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Detect if fire button is pressed
-		var fire = Input.GetButtonDown ("Fire1");
-		var jump = Input.GetButtonDown ("Jump");
-
-		if (fire || jump)
+		if (Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump"))
 		{	
 			// if projectile is specified
 			if (projectile)
