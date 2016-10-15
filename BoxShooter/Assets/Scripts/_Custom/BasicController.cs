@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections;
+
+using UnityEngine;
+using Ev = UnityEngine.Event;
 
 public class BasicController : MonoBehaviour {
 
@@ -12,11 +15,20 @@ public class BasicController : MonoBehaviour {
 		CharController = gameObject.GetComponent<CharacterController> ();	
 	}
 
-	// Update is called once per frame
 	void Update () {
-		var movementZ = Input.GetAxis ("Vertical") * Vector3.forward * movementSpeed * Time.deltaTime;
+		foreach (var item in Enum.GetValues(typeof(KeyCode)) as KeyCode[]) {
+			if (Input.GetKey (item)) {
+				Debug.Log (item);
+			}
+		}
 
-		var movementX = Input.GetAxis ("Horizontal") * Vector3.right * movementSpeed * Time.deltaTime;
+		var vert = Input.GetAxis ("Vertical");
+		Debug.Log (vert);
+		var movementZ = vert * Vector3.forward * movementSpeed * Time.deltaTime;
+
+		var hor = Input.GetAxis ("Horizontal");
+		Debug.Log (hor);
+		var movementX = hor * Vector3.right * movementSpeed * Time.deltaTime;
 
 		var movement = transform.TransformDirection (movementZ + movementX);
 
